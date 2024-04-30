@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title> Spring Quiz - Error </title>
+</head>
+<body>
+<header
+		th:replace="~{fragments/HeaderAndFooter :: header}">
+</header>
+<h1>:-(</h1>
+<h2>Что-то пошло не так, и мы не смогли выполнить ваш запрос.</h2>
+<h5 th:text="${errorMessage}"></h5>
+<a href="/">Вернуться на главную страницу</a>
+<footer
+		th:replace="~{fragments/HeaderAndFooter :: footer}">
+</footer>
+</body>
+
+</html>
