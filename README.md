@@ -10,6 +10,7 @@
   ```git clone https://github.com/OleksandrLozenko/Glossary_IT_TERMS.git```
   ## Настройка: 
   Также не забудьте в файле `application.properties` изменить название базы данных на своё:
+  
   ```spring.datasource.url=jdbc:mysql://localhost:3306/{ваша база данных}?createDatabaseIfNotExist=true```
   
   Важно! Перед запуском создайте базу данных. По желанию, вы можете заменить MySQL на другую СУБД, например, PostgreSQL.
