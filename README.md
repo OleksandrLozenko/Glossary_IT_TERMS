@@ -16,3 +16,7 @@
   Важно! Перед запуском создайте базу данных. По желанию, вы можете заменить MySQL на другую СУБД, например, PostgreSQL.
   
   ГОТОВО! 😊
+
+# Для ознакомления
+[Презентация](https://ivkhk-my.sharepoint.com/:p:/g/personal/oleksandr_lozenko_ivkhk_ee/EavWWKPIN9VPg8ntd3W0f20B1fIIp3gDiX4NPavM3sZ5Mg?email=Natalja.Ivleva%40ivkhk.ee&e=V6CXkG)
+
