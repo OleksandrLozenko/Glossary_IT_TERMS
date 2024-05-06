@@ -9,7 +9,7 @@ public enum Role {
 	ADMINISTRATOR("Administrator", "admn");
 	
 	public final String displayValue;
-	public final String shortName; // arbitrary max lenght = 4 
+	public final String shortName;
 	
 	Role(String display, String shortName) {
 		this.displayValue = display;
