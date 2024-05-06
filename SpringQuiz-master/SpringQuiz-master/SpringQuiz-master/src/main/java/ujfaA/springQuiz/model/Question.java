@@ -49,19 +49,19 @@ public class Question{
 	@CollectionTable(name = "answers", joinColumns = @JoinColumn(name = "question_id", referencedColumnName = "question_id"))
 	@OrderColumn(name = "ordinal", columnDefinition = "tinyint") 
 	@Column(name = "answer", nullable = false)
-	private List<@NotBlank String> answers = new ArrayList<String>();	// Includes the correctAnswer.
+	private List<@NotBlank String> answers = new ArrayList<String>();
 
 	@Transient
-	private int selectedAnswerIndex;	// Used in a form when user create a question.
+	private int selectedAnswerIndex;
 
 	@Transient
 	@Getter(value = AccessLevel.NONE)
 	@Setter(value = AccessLevel.NONE)
-	private int hash; // Default to 0
+	private int hash;
 	@Transient
 	@Getter(value = AccessLevel.NONE)
 	@Setter(value = AccessLevel.NONE)
-	private boolean hashIsZero; // Default to false;
+	private boolean hashIsZero;
 	
 	
 	public Question() {
@@ -82,7 +82,6 @@ public class Question{
 		Question otherQ = (Question) obj;
 		if ( ! this.questionText.equals(otherQ.questionText))
 			return false;
-		/* Check if answers are the same - irrelevant of order. */
 		return new HashSet<>(this.answers).equals(new HashSet<>(otherQ.answers));
 	}
 
